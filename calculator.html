@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Loan Calculator | ApexFinance</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Apex<span>Finance</span></div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About & Services</a></li>
+                <li><a href="calculator.html" class="active">Loan Calculator</a></li>
+                <li><a href="contact.html">Apply Now</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="calculator-box">
+            <h2>Interactive Loan Estimator</h2>
+            <p>Adjust the sliders below to view calculated monthly installment structures instantly based on our flat 12% annual rate.</p>
+            
+            <div class="calculator-inputs">
+                <div class="input-group">
+                    <label for="loan-amount">Loan Amount (UGX): <span id="amount-val">5,000,000</span></label>
+                    <input type="range" id="loan-amount" min="500000" max="20000000" step="500000" value="5000000">
+                </div>
+
+                <div class="input-group">
+                    <label for="loan-duration">Repayment Period (Months): <span id="duration-val">12</span></label>
+                    <input type="range" id="loan-duration" min="3" max="36" step="3" value="12">
+                </div>
+            </div>
+
+            <div class="calculator-results">
+                <h3>Estimated Monthly Payment:</h3>
+                <div class="payment-display">UGX <span id="monthly-payment">0</span></div>
+                <a href="contact.html" class="btn btn-primary">Proceed to Full Application</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ApexFinance Platform. All Rights Reserved. | Designed for Semester Web Development Assessment.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
